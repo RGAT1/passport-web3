@@ -89,7 +89,7 @@ class Strategy extends passport.Strategy {
     try {
       const authParams = { msg, signed };
 
-      this._onAuth(address, done, req, authParams);
+      this._onAuth(address, done);
     } catch (ex) {
       return this.error(ex);
     }
